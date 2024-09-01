@@ -1,0 +1,72 @@
+/* Import Rubik font variants */
+@font-face {
+    font-family: 'Rubik';
+    src: url('fonts/rubik/Rubik-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('fonts/rubik/Rubik-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('fonts/rubik/Rubik-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('fonts/rubik/Rubik-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Display Medium - H1 */
+h1 {
+    font-size: 40px; /* Font size: 40 */
+    line-height: 1.5; /* Height: 60 / 40 */
+    font-weight: 500; /* Font weight: w500 */
+    color: black;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+/* Headline Large - H2 */
+h2 {
+    font-size: 24px; /* Font size: 24 */
+    line-height: 1.25; /* Height: 30 / 24 */
+    font-weight: 500; /* Font weight: w500 */
+    color: black;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+/* Headline Small - H3 */
+h3 {
+    font-size: 18px; /* Font size: 18 */
+    line-height: 1.33; /* Height: 24 / 18 */
+    font-weight: 400; /* Default font weight */
+    color: black;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+/* Body Text - P */
+p {
+    font-size: 14px; /* Font size: 14 */
+    line-height: 1.43; /* Height: 20 / 14 */
+    font-weight: 400; /* Default font weight */
+    color: black;
+    margin-bottom: 16px;
+}
