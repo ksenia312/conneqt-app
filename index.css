@@ -24,23 +24,27 @@
 }
 
 /* Global Styles */
-body {
+body, html {
     font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background: #f4f4f4;
     color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .content-data {
-    padding: 150px 20px;
+    padding: 120px 50px 20px 50px;
 }
 
 .logo {
     position: absolute;
     right: 0;
     height: 250px;
-    z-index: -1;
+    opacity: 95%;
+    z-index: 1;
 }
 
 
@@ -51,7 +55,7 @@ h1 {
     font-weight: 500; /* Font weight: w500 */
     letter-spacing: 0;
     color: black;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
     text-align: center;
 }
 
@@ -63,14 +67,15 @@ h2 {
     letter-spacing: 0.2px; /* Letter spacing: 0.2 */
     color: black;
     margin-bottom: 16px;
+    margin-left: 16px;
 }
 
 /* Headline Small - H3 */
 h3 {
     font-size: 22px; /* Font size: 18 */
     line-height: 1.33; /* Height: 24 / 18 */
-    font-weight: 400; /* Default font weight */
-    color: #252525;
+    font-weight: 500; /* Default font weight */
+    color: black;
     margin-bottom: 16px;
 }
 
@@ -88,10 +93,52 @@ footer > p, footer a {
 }
 
 footer {
-    bottom: 0;
+    margin-top: auto;
     background: #252525;
     color: white;
     padding: 20px 40px;
     display: flex;
     justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+    }
+    footer > p {
+        padding: 0;
+        margin: 4px;
+    }
+
+
+    h1 {
+        font-size: 36px; /* Font size: 24 */
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 24px; /* Font size: 21 */
+        margin-bottom: 12px;
+        margin-left: 4px;
+    }
+
+    h3 {
+        font-size: 16px; /* Font size: 18 */
+        margin-bottom: 8px;
+    }
+
+    p, li {
+        font-size: 14px; /* Font size: 14 */
+        margin-bottom: 6px;
+    }
+
+    .logo {
+        height: 150px;
+    }
+
+    .content-data {
+        padding: 80px 20px 8px 20px;
+    }
 }
